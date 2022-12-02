@@ -7,4 +7,8 @@ class MyStrings{
   static const delete='حذف';
   static const deleteMessage='هل تريد تأكيد الحذف ؟ ';
   static const initialMessage='لا يوجد تسابيح , برجاء اضافة البعض ';
+  static const validateTitle= ' يرجى ادخال تسبيحة  ';
+  static const validateNum= ' يرجى ادخال عدد  ';
+  static const titleT= '  تسبيحة  ';
+  static const numT= '  عدد  ';
 }
