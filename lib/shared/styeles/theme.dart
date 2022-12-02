@@ -3,8 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:tutorial/shared/styeles/color.dart';
 ThemeData lightTheme =  ThemeData(
 
-
-
+  fontFamily: 'Marhey',
   primarySwatch: defaultColor,
 
 
@@ -107,7 +106,7 @@ ThemeData lightTheme =  ThemeData(
 
 
     bodyText1: TextStyle(
-
+      fontFamily: 'Marhey',
 
 
       fontSize:18.0,
@@ -124,7 +123,7 @@ ThemeData lightTheme =  ThemeData(
 
     ),
 subtitle1: TextStyle(
-
+  fontFamily: 'Marhey',
   fontSize:14.0,
 
 height: 1.3,

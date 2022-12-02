@@ -13,7 +13,7 @@ import 'package:tutorial/screens/test.dart';
      return MaterialApp(
        debugShowCheckedModeBanner: false,
       theme:lightTheme,
-       home:Directionality(
+       home:const Directionality(
            textDirection: TextDirection.rtl,
            child: AzLayoutScreen())
      );

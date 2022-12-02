@@ -43,7 +43,7 @@ class _AzLayoutScreenState extends State<AzLayoutScreen> {
                   fontSize: 27.0,
                   fontWeight: FontWeight.bold,
                   color: defaultColor,
-
+                  fontFamily: 'Marhey',
                 ),textAlign: TextAlign.center,
                 ),
               ),

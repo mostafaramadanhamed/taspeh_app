@@ -158,7 +158,7 @@ AlertDialog alertDialog(context, Map<dynamic, dynamic> model) {
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
     backgroundColor: defaultColor[50],
-    title: Text(MyStrings.delete,style: TextStyle(
+    title: Text(MyStrings.delete,textDirection:TextDirection.rtl,style: TextStyle(
       fontSize: 19.0,
       fontWeight: FontWeight.bold,
       color: defaultColor[400],
@@ -263,8 +263,8 @@ Widget myDivider() => Padding(
   ),
   child: Container(
     width: double.infinity,
-    height: 1.3,
-    color: defaultColor[400],
+    height: .8,
+    color: defaultColor.shade200,
   ),
 );
 
