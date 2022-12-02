@@ -1,6 +1,6 @@
  import 'package:flutter/material.dart';
 import 'package:tutorial/shared/styeles/theme.dart';
-import 'package:tutorial/test.dart';
+import 'package:tutorial/screens/test.dart';
  void main() {
    runApp(const MyApp());
  }

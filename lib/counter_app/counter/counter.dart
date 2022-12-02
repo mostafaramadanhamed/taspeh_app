@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:tutorial/counter_app/counter/cubit/cubit.dart';
 import 'package:tutorial/counter_app/counter/cubit/states.dart';
-import 'package:tutorial/homeScreen.dart';
-import 'package:tutorial/shared/cubit/cubit.dart';
 import 'package:tutorial/shared/styeles/color.dart';
+
+
 class CounterScreen extends StatefulWidget {
   final String num;
 
 
-  CounterScreen({
+   const CounterScreen({Key? key,
 
     required this.num,
-  });
+  }) : super(key: key);
 
   @override
   State<CounterScreen> createState() => _CounterScreenState();
@@ -37,9 +36,9 @@ class _CounterScreenState extends State<CounterScreen> {
         },
         builder: (context,state){
           return  Scaffold(
-            backgroundColor: Colors.brown[50],
+            backgroundColor: defaultColor[50],
             appBar: AppBar(
-              backgroundColor: Colors.brown[50],
+              backgroundColor: defaultColor[50],
             ),
             body: Column(
               children: [
@@ -48,7 +47,7 @@ class _CounterScreenState extends State<CounterScreen> {
                   height: 60.0,
                 ),
                 Padding(
-                  padding:  EdgeInsetsDirectional.only(
+                  padding:  const EdgeInsetsDirectional.only(
                     end: 15.0,
                     start: 15.0,
                     top: 15.0,
@@ -62,44 +61,44 @@ class _CounterScreenState extends State<CounterScreen> {
                                 'الدورة  ',
                               textAlign: TextAlign.end,
                               style:Theme.of(context).textTheme.headline5!.copyWith(
-                                color: Colors.brown[600]
+                                color: defaultColor[600]
                               )
                       ),
-                            Spacer(),
+                            const Spacer(),
                             Text(
                               'العدد الكلي ',
                               textAlign: TextAlign.start,
                               style: Theme.of(context).textTheme.headline5!.copyWith(
-                                  color: Colors.brown[600]
+                                  color: defaultColor[600]
                               )
                             ),
                           ],
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 25.0,
                             ),
                             Text(
-                              '${da}',
+                              '$da',
                               textAlign: TextAlign.start,
                               style: Theme.of(context).textTheme.caption!.copyWith(
                                 fontSize: 20.0,
-                                color:Colors.brown[300]
+                                color:defaultColor[300]
                               ),
                             ),
 
-                            Spacer(),
+                            const Spacer(),
                             Text(
                               '${CounterCubit.get(context).pl  }',
                               textAlign: TextAlign.start,
                               style: Theme.of(context).textTheme.caption!.copyWith(
                                   fontSize: 20.0,
-                                  color:Colors.brown[300]
+                                  color:defaultColor[300]
 
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 25.0,
                             ),
                           ],
@@ -134,15 +133,15 @@ class _CounterScreenState extends State<CounterScreen> {
                        child: Container(
                          height: 200,
                          width: 350,
-                         color: Colors.brown[50],
+                         color: defaultColor[50],
                          child:
                             CircleAvatar(
                               radius: 100.0,
-                              backgroundColor: Colors.brown[500],
+                              backgroundColor: defaultColor[500],
 
                               child: CircleAvatar(
                                radius: 96.0,
-                               backgroundColor: Colors.brown[100],
+                               backgroundColor: defaultColor[100],
                                child: Padding(
                                  padding: const EdgeInsets.all(20.0),
                                  child: Text(
@@ -150,7 +149,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                    style:  TextStyle(
                                      fontSize: 35.0,
                                      fontWeight: FontWeight.bold,
-                                     color: Colors.brown[600],
+                                     color: defaultColor[600],
                                    ),
                                  ),
                                ),
@@ -172,13 +171,13 @@ class _CounterScreenState extends State<CounterScreen> {
                           da=0;
                         },
                         child: CircleAvatar(
-                          backgroundColor: Colors.brown[100],
+                          backgroundColor: defaultColor[100],
                           radius: 27.0,
                           child: const Text('0',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 35.0,
-                              color: Colors.brown,
+                              color: defaultColor,
                             ),),
 
                         ),
@@ -189,13 +188,13 @@ class _CounterScreenState extends State<CounterScreen> {
                           CounterCubit.get(context).minus();
                         },
                         child: CircleAvatar(
-                          backgroundColor: Colors.brown[100],
+                          backgroundColor: defaultColor[100],
                           radius: 27.0,
                             child:const Text('-',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 35.0,
-                                color: Colors.brown,
+                                color: defaultColor,
                               ),),
                         ),
                       ),

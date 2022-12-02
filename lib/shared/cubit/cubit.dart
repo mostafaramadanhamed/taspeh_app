@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:tutorial/model/azmodel.dart';
 import 'package:tutorial/shared/cubit/states.dart';
 
-import '../../homeScreen.dart';
+import '../../screens/homeScreen.dart';
 
 
 class AppCubit extends Cubit<AppStates> {
